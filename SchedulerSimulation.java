@@ -294,6 +294,7 @@ public class SchedulerSimulation {
 
     // Method to add a process to the queue and map, while printing a "ready"
     // message
+     // FEATURE 1: Updated to display priority in the output message
     public static void addProcessToQueue(Process process, Queue<Thread> processQueue,
             Map<Thread, Process> processMap) {
         // Create a new thread to run the process
