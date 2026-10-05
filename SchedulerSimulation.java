@@ -308,9 +308,8 @@ public class SchedulerSimulation {
         // each thread
         processMap.put(thread, process);
 // FEATURE 1: Updated the output message to include priority
-
-        // Print a message indicating the process has entered the ready queue
         System.out.println(Colors.BLUE + "  ➕ " + Colors.BOLD + Colors.CYAN + process.getName() +
+                Colors.RESET + Colors.YELLOW + " [Priority: " + process.getPriority() + "]"+
                 Colors.RESET + Colors.BLUE + " added to ready queue" + Colors.RESET +
                 " │ Burst time: " + Colors.YELLOW + process.getBurstTime() + "ms" +
                 Colors.RESET);
