@@ -208,8 +208,8 @@ public class SchedulerSimulation {
             // FEATURE 1: Generate random priority between 1 and 10 (10 is highest)
             int priority = 1 + random.nextInt(10); // Random number between 1 and 10
             // Create a new process object with a unique name, burst time, and the defined
-            // time quantum
-            Process process = new Process("P" + i, burstTime, timeQuantum);
+            // time quantum,priority
+            Process process = new Process("P" + i, burstTime, timeQuantum,priority);
 
             // Add the process to the ready queue and the map
             addProcessToQueue(process, processQueue, processMap);
