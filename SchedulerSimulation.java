@@ -306,6 +306,7 @@ public class SchedulerSimulation {
         // Map the thread to the process, so we can track the process associated with
         // each thread
         processMap.put(thread, process);
+// FEATURE 1: Updated the output message to include priority
 
         // Print a message indicating the process has entered the ready queue
         System.out.println(Colors.BLUE + "  ➕ " + Colors.BOLD + Colors.CYAN + process.getName() +
