@@ -128,7 +128,7 @@ class Process implements Runnable {
         }
     }
 
-    // Getter methods for process name, burst time, and remaining time
+    // Getter methods for process name, burst time, and remaining time,priority
     public String getName() {
         return name;
     }
@@ -140,7 +140,7 @@ class Process implements Runnable {
     public int getRemainingTime() {
         return remainingTime;
     }
-// FEATURE 1: Getter for priority
+// FEATURE 1: Get the process priority
     public int getPriority() {
         return priority;
     }
