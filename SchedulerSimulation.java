@@ -177,9 +177,10 @@ class Process implements Runnable {
     public void setLastReadyTime(long time) {
         this.lastReadyTime = time;
     }
-
-
-    
+    // FEATURE 3: Calculate the turnaround time by adding waiting time and burst time
+    public long getTurnaroundTime() {
+        return totalWaitingTime + burstTime;
+    }
 
     // Check if the process has finished (i.e., no remaining time)
     public boolean isFinished() {
