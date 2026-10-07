@@ -390,4 +390,33 @@ public class SchedulerSimulation {
                 " │ Burst time: " + Colors.YELLOW + process.getBurstTime() + "ms" +
                 Colors.RESET);
     }
+    // FEATURE 3: Method to display the summary table for waiting & turnaround times
+    // Shows Process Name, Burst Time, Priority, Waiting Time, and Turnaround Time for every process
+    public static void displayWaitingTimeSummary() {
+        // Print the summary table header with its border
+        System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN + 
+                          "╔══════════════════════════════════════════════════════════════════════════════════╗" + 
+                          Colors.RESET);
+        System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN + "║" + Colors.RESET + 
+                          Colors.BG_BLUE + Colors.BRIGHT_WHITE + Colors.BOLD + 
+                          "                PROCESS WAITING & TURNAROUND TIME SUMMARY                        " + 
+                          Colors.RESET + Colors.BOLD + Colors.BRIGHT_CYAN + "║" + Colors.RESET);
+        System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN + 
+                          "╠══════════════════════════════════════════════════════════════════════════════════╣" + 
+                          Colors.RESET);
+        
+        // Print the names of the table columns
+        System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN + "║" + Colors.RESET + 
+                          "  " + Colors.BOLD + Colors.BRIGHT_WHITE + 
+                          String.format("%-10s", "Process") + 
+                          String.format("%-12s", "Burst Time") + 
+                          String.format("%-10s", "Priority") + 
+                          String.format("%-15s", "Waiting Time") + 
+                          String.format("%-18s", "Turnaround Time") + 
+                          Colors.RESET + "   " +
+                          Colors.BOLD + Colors.BRIGHT_CYAN + "║" + Colors.RESET);
+        
+        System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN + 
+                          "╠══════════════════════════════════════════════════════════════════════════════════╣" + 
+                          Colors.RESET);
 }
