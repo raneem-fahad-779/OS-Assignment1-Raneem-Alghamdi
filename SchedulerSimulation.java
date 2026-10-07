@@ -154,6 +154,11 @@ class Process implements Runnable {
     public int getPriority() {
         return priority;
     }
+    // FEATURE 3: Getter to access the process creation time
+    public long getCreationTime() {
+        return creationTime;
+    }
+    
 
     // Check if the process has finished (i.e., no remaining time)
     public boolean isFinished() {
