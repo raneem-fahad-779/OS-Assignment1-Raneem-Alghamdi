@@ -364,6 +364,8 @@ public class SchedulerSimulation {
         System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + 
                           "╚══════════════════════════════════════════════════════════════════════════════════╝" + 
                           Colors.RESET + "\n");
+        // FEATURE 3: Display the waiting and turnaround time summary table at the end
+        displayWaitingTimeSummary();
 
     }
 
