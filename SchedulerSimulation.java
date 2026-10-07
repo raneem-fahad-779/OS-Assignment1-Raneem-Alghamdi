@@ -162,6 +162,11 @@ class Process implements Runnable {
     public long getTotalWaitingTime() {
         return totalWaitingTime;
     }
+    // FEATURE 3: Getter to access the process last ready time
+    public long getLastReadyTime() {
+        return lastReadyTime;
+    }
+
 
     
 
