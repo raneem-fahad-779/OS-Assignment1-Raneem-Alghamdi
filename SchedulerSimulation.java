@@ -276,15 +276,21 @@ public class SchedulerSimulation {
             Thread currentThread = processQueue.poll(); // Dequeues the next thread
  // FEATURE 2: Increment context switch counter 
             contextSwitchCount++;
+            // Retrieve the process associated with the thread from the map
+            Process process = processMap.get(currentThread);
+            
+            // FEATURE 3: Update the waiting time for the process before it runs
+            // Find how long the process waited since it entered the queue 
+            process.updateWaitingTime();
             // Print the current process queue (list of process IDs in the queue)
             System.out.println(Colors.BOLD + Colors.MAGENTA + "┌─ Ready Queue " + "─".repeat(65) + Colors.RESET);
             System.out.print(Colors.MAGENTA + "│ " + Colors.RESET + Colors.BRIGHT_WHITE + "[" + Colors.RESET);
             int queueCount = 0;
             for (Thread thread : processQueue) {
-                Process process = processMap.get(thread);
+                Process pro = processMap.get(thread);
                 if (queueCount > 0)
                     System.out.print(Colors.WHITE + " → " + Colors.RESET);
-                System.out.print(Colors.BRIGHT_CYAN + process.getName() + Colors.RESET);
+                System.out.print(Colors.BRIGHT_CYAN + pro.getName() + Colors.RESET);
                 queueCount++;
             }
             if (queueCount == 0) {
@@ -303,9 +309,6 @@ public class SchedulerSimulation {
             } catch (InterruptedException e) {
                 System.out.println("Main thread interrupted.");
             }
-
-            // Retrieve the process associated with the thread from the map
-            Process process = processMap.get(currentThread);
 
             // Check if the process is not finished
             if (!process.isFinished()) {
