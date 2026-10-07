@@ -33,6 +33,11 @@ class Process implements Runnable {
     private int remainingTime; // Time left for the process to finish its execution
  // FEATURE 1: Add priority ( 1-10, with 10 as the highest)
     private int priority; // process Priority  (1-10, where 10 is the highest)
+// FEATURE 3: Fields used to keep track of process wating time
+    private long creationTime; //  Time when the process was first created (in milliseconds)
+    private long totalWaitingTime; // Total time the process spent waiting in the queue (in milliseconds)
+    private long lastReadyTime; // Most recent time the process entered the ready queue 
+    
     // Constructor to initialize the process with name, burst time, and time quantum,and priority
     public Process(String name, int burstTime, int timeQuantum,int priority) {
         this.name = name;
