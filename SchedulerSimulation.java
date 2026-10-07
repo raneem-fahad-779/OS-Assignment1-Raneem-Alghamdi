@@ -315,6 +315,10 @@ public class SchedulerSimulation {
                 // If the process still has remaining time, check if there are more processes in
                 // queue
                 if (!processQueue.isEmpty()) {
+                    // FEATURE 3: Set the last ready time when the process enters the queue again
+                    // This marks the time when the process starts waiting again
+                    process.setLastReadyTime(System.currentTimeMillis());
+
                     // Re-enqueue the process to give it another chance to run in the next round
                     addProcessToQueue(process, processQueue, processMap);
                 } else {
