@@ -192,6 +192,8 @@ public class SchedulerSimulation {
     // FEATURE 2: count context switches
     //  increase the count when a new process runs 
     private static int contextSwitchCount = 0;
+    // FEATURE 3: List to store the completed processes for the final summary
+    private static List<Process> completedProcesses = new ArrayList<>();
 
     public static void main(String[] args) {
         // ⚠️ IMPORTANT: Put your student ID here to seed the random number generator
