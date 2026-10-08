@@ -237,7 +237,12 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+I learned how threads work in Java using Runnable. 
+I learned that the run() method contains the code the thread runs. 
+I learned that start() begins the thread, and join() makes the main thread wait for it to finish.
+I also learned that sleep() simulates running time.
+In my code, each process gets a time quantum to run.
+I was surprised that a process can return to the ready queue if it does not finish.
 
 ## Question 2: What was the most challenging part of this assignment?
 
