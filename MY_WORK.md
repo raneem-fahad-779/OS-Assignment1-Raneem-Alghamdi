@@ -211,13 +211,13 @@
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: Approximately 4 hours
 
-**Most challenging part**:
+**Most challenging part**: The most challenging part was knowing where to update the waiting time when a process returns to the ready queue. I needed to understand how the process waits before running again
 
-**Most interesting learning**:
+**Most interesting learning**: I learned how to calculate waiting time and turnaround time for each process. I also learned how to show the final results and calculate their averages
 
-**What I would do differently next time**:
+**What I would do differently next time**: Next time, I would follow the processes in the ready queue more carefully while working on the code. This would help me understand when to update each value
 
 ---
 
