@@ -155,16 +155,16 @@
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 3 - [October 5, 2026, 3:48 PM]
+**What I did**:  I worked on Feature 2 by adding a counter to count how many times a process is selected to run during the simulation
 
-**Details**:
+**Details**:  I added contextSwitchCount and set it to zero. I placed contextSwitchCount++ inside the scheduling loop so the counter increases each time a process is selected from the ready queue. I also added a print statement to show the total at the end of the simulation
 
-**Challenges**:
+**Challenges**: I was not sure where to increase the counter in the code
 
-**Solution**:
+**Solution**:  I checked the scheduling loop and found where the next process is taken from the ready queue. Then I added the counter after that step
 
-**Time spent**:
+**Time spent**: 45 minutes
 
 ---
 
