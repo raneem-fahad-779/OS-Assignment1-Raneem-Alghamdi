@@ -323,15 +323,25 @@ A process is a running program, while a thread is a smaller part of a process. T
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+In Round-Robin scheduling, a process returns to the ready queue if it does not finish within its time quantum. In my output, P1 has a burst time of 9834ms and a time quantum of 5000ms. After running for 5000ms, it has 4834ms remaining, so it returns to the ready queue once. When P1 gets its next turn, it finishes its remaining time. This is fair because other processes also get a chance to use the CPU.
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+? P1 [Priority: 4] added to ready queue ? Burst time: 9834ms
+...
+? P1 executing quantum [5000ms]
+Remaining time: 4834ms
+? P1 yields CPU for context switch
+? P1 [Priority: 4] added to ready queue ? Burst time: 9834ms
+...
+? P1 executing quantum [4834ms]
+? P1 completed quantum 4834ms
+Remaining time: 0ms
+? P1 finished execution!
 ```
 
 **Explanation of example:**
-[Explain what is happening in the output snippet you pasted.]
+P1 did not finish on its first turn because its burst time exceeded the time quantum. It returned to the ready queue once and waited for its next turn. This allowed the other processes to run before P1 finished.
 
 ## Question 3: Thread Lifecycle
 
