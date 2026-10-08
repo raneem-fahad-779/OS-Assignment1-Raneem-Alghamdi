@@ -168,16 +168,16 @@
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
+### Entry 4 - [October 7, 2026, 6:26 PM]
+**What I did**:  I started Feature 3 by adding variables and methods to track and calculate each process’s waiting time
 
-**Details**:
+**Details**:  I added creationTime, totalWaitingTime, and lastReadyTime to the Process class. Then I set their initial values and added methods to retrieve them. I also added updateWaitingTime() to calculate the waiting time and getTurnaroundTime() to calculate the turnaround time
 
-**Challenges**:
+**Challenges**: I wasn't sure how to calculate waiting time when a process runs more than once
 
-**Solution**:
+**Solution**:  I checked how the waiting time is calculated and used lastReadyTime to find how long the process waited before running
 
-**Time spent**:
+**Time spent**: 45 minute
 
 ---
 
