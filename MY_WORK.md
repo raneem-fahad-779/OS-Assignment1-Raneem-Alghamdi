@@ -260,8 +260,13 @@ This made it difficult to know when the process starts waiting again. I needed t
 > 💡 **TIP:** Describe your method: reading documentation, adding `System.out.println` to debug, re-reading the README, testing after each small change, asking for help.
 
 **Your Answer:** *(5-7 sentences)*
+I tried to understand the code step by step.
+I focused on what happens when a process returns to the ready queue. 
+I looked at updateWaitingTime() to understand how the waiting time is calculated. 
+I also checked setLastReadyTime() to see when the waiting time starts again.
+I followed these methods in the code to understand how they work together. 
+This helped me understand Feature 3 better.
 
-[Write your answer here.]
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
