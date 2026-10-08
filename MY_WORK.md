@@ -181,16 +181,16 @@
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 5 - [October 7, 2026, 7:12 PM]
+**What I did**:  I continued Feature 3 by saving completed processes and adding a final summary to show the results
 
-**Details**:
+**Details**: I added completedProcesses to save the finished processes. I also updated lastReadyTime when a process returned to the ready queue and added completed processes to the list. Then, I created displayWaitingTimeSummary() to show each process’s burst time, priority, waiting time, and turnaround time. I also calculated the average waiting time and turnaround time
 
-**Challenges**:
+**Challenges**: I was not sure how to calculate the average values for the final summary
 
-**Solution**:
+**Solution**:  I added the waiting times and turnaround times of the completed processes separately. Then, I divided each total by the number of completed processes
 
-**Time spent**:
+**Time spent**: 1 hour
 
 ---
 
