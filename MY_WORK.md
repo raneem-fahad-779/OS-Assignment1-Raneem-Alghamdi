@@ -274,7 +274,12 @@ This helped me understand Feature 3 better.
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+Multithreading is useful in many everyday applications.
+For example, a web browser can download a file while we open another page.
+A music app can play music while we search for another song. 
+Threads help applications do different tasks without stopping. 
+In my code, the scheduler gives each process time to run. 
+This helped me understand how applications can manage different tasks.
 
 ### Optional: What would you like to learn more about?
 
