@@ -129,16 +129,16 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [October 2,2026,3:51 PM]
+**What I did**: I opened the starter code, changed the student ID to mine, and checked how the program works
 
-**Details**:
+**Details**: I opened SchedulerSimulation.java and updated my student ID. I checked how the program creates processes and adds them to the ready queue before they start running
 
-**Challenges**:
+**Challenges**: At first, I was confused about how the processes move through the ready queue
 
-**Solution**:
+**Solution**: I checked the code in the main method to understand how processes are added to the ready queue and run one by one
 
-**Time spent**:
+**Time spent**: 30 minutes
 
 ---
 
