@@ -249,8 +249,11 @@ I was surprised that a process can return to the ready queue if it does not fini
 > 💡 **TIP:** Pick **one** specific challenge (understanding the code, one of the features, Git, the video) and say *why* it was hard.
 
 **Your Answer:** *(5-7 sentences)*
+The hardest part for me was calculating the waiting time in Feature 3. 
+At first, I didn't understand when to update the waiting time.
+I learned that a process can go back to the ready queue if it still has remaining time.
+This made it difficult to know when the process starts waiting again. I needed to understand how updateWaitingTime() works in the code. Following the ready queue helped me understand this part better.
 
-[Write your answer here.]
 
 ## Question 3: How did you overcome the challenges you faced?
 
