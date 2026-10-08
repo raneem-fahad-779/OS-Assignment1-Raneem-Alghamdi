@@ -142,16 +142,16 @@
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 2 - [October 3,2026,3:53 PM and October 5, 2026, 11:01 AM]
+**What I did**:  I worked on Feature 1 by adding priority to each process and showing it in the ready queue
 
-**Details**:
+**Details**:  I started Feature 1 on October 3 by adding a priority variable and a getter method in the Process class. I also generated a random priority from 1 to 10. On October 5, I updated the constructor to receive the priority value and passed it when creating each process. I also changed the output to show the priority when a process is added to the ready queue
 
-**Challenges**:
+**Challenges**: I needed to understand how the priority value is passed to each process
 
-**Solution**:
+**Solution**:I checked the constructor and the code that creates processes. This helped me understand how the priority value is stored and displayed
 
-**Time spent**:
+**Time spent**: 1 hour
 
 ---
 
