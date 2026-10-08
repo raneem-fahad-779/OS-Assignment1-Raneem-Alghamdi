@@ -310,8 +310,8 @@ This helped me understand how applications can manage different tasks.
 > 💡 **TIP:** Note that the class named `Process` in our code is a *simulated* process, and it is run by a real Java *thread*. Explain that distinction and point to the `new Thread(process)` line in `addProcessToQueue()`.
 
 **Your Answer:** *(3-5 sentences)*
+A process is a running program, while a thread is a smaller part of a process. Threads in the same process can share memory, but separate processes usually have their own memory. Threads are also faster to create and communicate with each other than separate processes. In my code, the Process class represents a simulated process, and I used new Thread(process) in addProcessToQueue() to run it. We used threads because they are easier to manage and share resources in the scheduler.
 
-[Write your answer here.]
 
 ## Question 2: Ready Queue Behavior
 
