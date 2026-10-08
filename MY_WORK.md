@@ -351,15 +351,15 @@ P1 did not finish on its first turn because its burst time exceeded the time qua
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New**: P1 is in the New state when a thread is created using new Thread(process) in addProcessToQueue().
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**:  P1 becomes Runnable when currentThread.start() is called in the scheduler loop.
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: P1 runs its run() method and executes for 5000ms during its first turn.
 
-4. **Waiting**: [When and why would a thread be Waiting?]
+4. **Waiting**: The main thread waits using currentThread.join(), while P1 enters timed waiting when Thread.sleep() is called inside run().
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: P1’s thread becomes Terminated when its run() method finishes, and a new thread is created if P1 needs another turn.
 
 ## Question 4: Real-World Applications
 
