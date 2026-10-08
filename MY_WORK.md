@@ -369,32 +369,33 @@ P1 did not finish on its first turn because its burst time exceeded the time qua
 
 **Your Answer:** *(3-5 sentences per example)*
 
-### Example 1 (operating-system level): [Name of scenario]
+### Example 1 (operating-system level): CPU Scheduling
 
 **Description**:
-[Describe the real-world scenario.]
+An operating system can use Round-Robin scheduling to share CPU time between running programs. For example, a browser and a music player can each get a turn to use the CPU. This is similar to my code, where each process gets a time quantum of 5000ms.
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+Round-Robin is fair because each process gets a chance to run. A context switch lets the CPU switch to the next process.
 
-### Example 2: [Name of application/scenario]
+### Example 2: Print Server
 
 **Description**:
-[Describe the real-world scenario or application.]
+A print server can use Round-Robin to share processing time between different print jobs. Each job is like a process in my simulation. The server gives each job a time quantum before moving to the next job.
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+This is fair because one large print job does not take all the processing time. A context switch lets another job take a turn.
+
 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1.
-2.
-3.
+1.I learned that a thread is different from a process and how I used threads in my simulation.
+2.I understood why a process goes back to the ready queue when it still has remaining time.
+3.I learned how the time quantum helps give each process a turn and why context switching is important.
 
 **Concepts I need to study more:**
-1.
-2.
+1.I want to understand the thread states better, especially when a thread is waiting or running.
+2.I need more practice following the ready queue when there are many processes.
 
 ---
 
